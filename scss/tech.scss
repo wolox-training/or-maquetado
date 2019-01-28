@@ -1,34 +1,62 @@
 .border {
-    width: 200px;
-    height: 300px;
-    border: solid 1px;
-    border-radius: 10px;
-    border-color: #bed23c;
+  width: 220px;
+  height: 320px;
+  border: solid 1px;
+  display: inline-block;
+  border-radius: 10px;
+  border-color: #bed23c;
+  position: relative;
+  transition: left 0.5s ease;
+  left: 5px;
+  top: 5px;    
 }
 
-.tech{
-    background-color: #bed23c;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    padding: 10px;
-    position: relative;
-    left: 10px;
-    top: 10px;
+.border:hover {
+  left: -5px;
+  top: -5px;    
+  }
+
+.tech {
+  align-items: center;
+  background-color: #bed23c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 50px;
 }
+
+.tech:before {
+  content: "";
+  border: solid 2px;
+  border-radius: 10px;
+  border-color: #bed23c;
+  position: absolute;
+  transition: top left 0.5s ease;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 300px;
+  z-index: -1;
+}
+
+.tech:hover:before {
+  top: -10px;
+  left: -10px;  
+  }
 
 .tech-logo {
-    width: 50%;    
+  width: 50%;    
 }
 
-.release{
-    font-weight: bold;
+.release {
+  font-weight: bold;
 } 
 
 .tech p {
-    text-align:center;    
+  text-align: center;    
 }
