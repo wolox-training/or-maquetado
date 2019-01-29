@@ -1,16 +1,15 @@
-h1{ 
-    font-size: 40px;
-    position: relative;
-    width: 380px;
-    margin: 60px;
-    padding: 40px;
+.title-tech { 
+  font-size: 40px;
+  position: relative;
+  width: 380px;
+  margin: 60px;
+  padding: 40px;
 }
-
-h1:before {
-    content:url('assets/triangle.svg');
-    position: absolute;
-    z-index:-100000;
-    top: -30px;
-    left: -45px;
-    width: 120px;
+.title-tech:before {
+  content:url('assets/triangle.svg');
+  position: absolute;
+  z-index:-10;
+  top: -30px;
+  left: -45px;
+  width: 120px;
 }
