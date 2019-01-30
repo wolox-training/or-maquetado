@@ -4,13 +4,12 @@
   width: 380px;
   margin: 60px;
   padding: 40px;
-}
-
-.title-tech:before {
+  &:before {
   content:url('assets/triangle.svg');
   position: absolute;
   z-index:-1;
   top: -30px;
   left: -45px;
   width: 120px;
+  }
 }
