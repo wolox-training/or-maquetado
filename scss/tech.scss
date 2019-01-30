@@ -1,45 +1,39 @@
 .tech {
-  align-items: center;
-  background-color: #bed23c;
+  background-color: $tech-color;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   width: 200px;
   height: 300px;
   padding: 10px;
   position: relative;
-  margin-bottom: 50px;
-}
-
-.tech::before {
+  left: 10px;
+  top: 10px;
+  &.tech:before {
   content: "";
   border: solid 2px;
   border-radius: 10px;
-  border-color: #bed23c;
+  border-color:  $tech-color;
   position: absolute;
   transition: top left 0.5s ease;
-  top: 10px;
-  &:hover {
   top: -10px;
-  }
-  left: 10px;
-  &:hover {
   left: -10px;
-  }
   width: 200px;
   height: 300px;
   z-index: -1;
 }
+}
 
 .tech-logo {
-  width: 50%;    
+  width: 85px;    
 }
 
 .release {
   font-weight: bold;
 } 
 
-.tech p {
-  text-align: center;    
+.text {
+  text-align:center;    
 }
