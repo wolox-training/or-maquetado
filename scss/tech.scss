@@ -1,21 +1,3 @@
-.border {
-  width: 220px;
-  height: 320px;
-  border: solid 1px;
-  display: inline-block;
-  border-radius: 10px;
-  border-color: #bed23c;
-  position: relative;
-  transition: left 0.5s ease;
-  left: 5px;
-  top: 5px;    
-}
-
-.border:hover {
-  left: -5px;
-  top: -5px;    
-  }
-
 .tech {
   align-items: center;
   background-color: #bed23c;
@@ -30,7 +12,7 @@
   margin-bottom: 50px;
 }
 
-.tech:before {
+.tech::before {
   content: "";
   border: solid 2px;
   border-radius: 10px;
@@ -38,16 +20,17 @@
   position: absolute;
   transition: top left 0.5s ease;
   top: 10px;
+  &:hover {
+  top: -10px;
+  }
   left: 10px;
+  &:hover {
+  left: -10px;
+  }
   width: 200px;
   height: 300px;
   z-index: -1;
 }
-
-.tech:hover:before {
-  top: -10px;
-  left: -10px;  
-  }
 
 .tech-logo {
   width: 50%;    
