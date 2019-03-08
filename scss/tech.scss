@@ -11,19 +11,26 @@
   position: relative;
   left: 10px;
   top: 10px;
-&.tech:before {
-  content: "";
-  border: solid 2px;
-  border-radius: 10px;
-  border-color:  $tech-color;
-  position: absolute;
-  transition: top left 0.5s ease;
-  top: -10px;
-  left: -10px;
-  width: 200px;
-  height: 300px;
-  z-index: -1;
-}
+  margin-bottom: 50px;
+
+  &:before {
+    content: "";
+    border: solid 2px;
+    border-radius: 10px;
+    border-color:  $tech-color;
+    position: absolute;
+    transition: top left 0.5s ease;
+    top: -10px;
+    left: -10px;
+    width: 200px;
+    height: 300px;
+    z-index: -1;
+  }
+  
+  &:hover:before {
+    top: 10px;
+    left: 10px;   
+  }
 }
 
 .tech-logo {
